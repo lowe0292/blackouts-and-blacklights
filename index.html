@@ -6,8 +6,6 @@
   <meta property="og:image" content="img/year.jpg" />
   <meta property="og:image:width" content="640" />
   <meta property="og:image:height" content="442" />
-  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-  <script type="text/javascript">stLight.options({publisher: "4e31d44c-8bff-4c5b-9f1f-43b1bf5213c9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body ng-app="party">
   <div class="cover-image">
@@ -25,10 +23,10 @@
     </p>
     <button ng-show="!vm.isComing" ng-click="vm.rsvp()">RSVP</button>
     <p ng-show="vm.isComing" class="prank">Lol, you don't need to RSVP! Just show up and <a href="https://www.facebook.com/events/578526965634471/">bring your cool friends</a>.</p>
-    <div ng-show="vm.isComing" class="center">
-      <span class='st_facebook_large' displayText='Facebook'></span>
-      <span class='st_twitter_large' displayText='Tweet'></span>
-    </div>
+    <p ng-show="vm.isComing" class="center">
+      <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=blackoutsandblacklights.com">Share on Facebook</a> |
+      <a class="share" href="https://twitter.com/home?status=Blackouts%20and%20Blacklights%20//%20A%20NYE%20Extravaganza%0Ablackoutsandblacklights.com">Share on Twitter</a>
+    </p>
   </div>
   <!--<p class="center">Let's start 2016 in style.</p>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
